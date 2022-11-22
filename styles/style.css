@@ -8,3 +8,33 @@
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+.material-icons{
+    cursor: pointer;
+}
+
+
+.bg-info {
+    background-color: #D5BDAF !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #D5BDAF;
+}
+
+.btn-primary {
+    color: #E3D5CA;
+    font-size: 150%;
+    background-color: #F5EBE0;
+    border-color: #D6CCC2;
+    border-width: thick
+}
+
+body {
+    background-color: #EDEDE9;
+}
+
+.navbar-brand{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.25rem;
+}
