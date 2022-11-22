@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <head>
+        <title>My BCIT Project</title>
+        <meta name="comp1800 template" content="My 1800 App">
 
-    <!------------------------>
-    <!-- Required meta tags -->
-    <!------------------------>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!------------------------>
+        <!-- Required meta tags -->
+        <!------------------------>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!------------------------------------------>
-    <!-- Bootstrap Library CSS JS CDN go here -->
-    <!------------------------------------------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        <!------------------------------------------>
+        <!-- Bootstrap Library CSS JS CDN go here -->
+        <!------------------------------------------>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
+        <link rel="stylesheet" href="./styles/style.css">
 
-    <!-------------------------------------------------------->
-    <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
-    <!-------------------------------------------------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
-    <!-------------------------------------------->
-    <!-- Other libraries and styles of your own -->
-    <!-------------------------------------------->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+        <!-------------------------------------------------------->
+        <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
+        <!-------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet"
+            href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
-</head>
+        <!-------------------------------------------->
+        <!-- Other libraries and styles of your own -->
+        <!-------------------------------------------->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
-<body>
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
 
-    <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav>
+    </head>
 
-    <!-- the body of your page goes here -->
-    <div class="container">
-        <h1>Welcome to Hoda Hiking App</h1>
-        <a href="login.html" class="btn btn-info" role="button">Log in</a>
-    </div>
+    <body>
+        <!------------------------------>
+        <!-- Your HTML Layout go here -->
+        <!------------------------------>
 
-    <!-- our own footer goes here-->
-    <nav id="footerPlaceholder"></nav>
+        <!-- our own navbar goes here -->
+        <nav id="navbarPlaceholder"></nav>
 
-    <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
-    <!---------------------------------------------->
-    <script src="./scripts/firebaseAPI_TEAM99.js"></script>
-    <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/script.js"></script>
+        <!-- the body of your page goes here -->
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="images/poodent.png" class="img-fluid rounded-3 mb-4" alt="Example image" width="200"
+                        height="200" loading="lazy">
+                </div>
+            </div>
+            <h1 class="display-4 fw-bold">Focus Farm</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 fw-bold">The simple way to improve your study habits.</p>
+                <p>Focus Farm helps motivate users to maintain healthy study and work habits with the goal of improving
+                    your performance.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <a href="login.html" class="btn btn-info" role="button">Get Started</a>
+                </div>
+            </div>
+        </div>
 
-</body>
+        <div>
+            <h1>#Focus</h1>
+            <h1>#Study</h1>
+            <h1>#Productivity</h1>
+            <!-- <img
+                src="data:image/jpeg;base64,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"> -->
+        </div>
+
+        <!-- our own footer goes here-->
+        <nav id="footerPlaceholder"></nav>
+
+        <!---------------------------------------------->
+        <!-- Your own JavaScript functions go here    -->
+        <!---------------------------------------------->
+        <script src="./scripts/firebaseAPI_TEAM99.js"></script>
+        <script src="./scripts/skeleton.js"></script>
+        <script src="./scripts/script.js"></script>
+
+    </body>
 
 </html>
